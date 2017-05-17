@@ -1,0 +1,13 @@
+# Docker-Compose configuration file.
+
+version: '2'
+
+services:
+    # NGINX preview of 'npm run build' contents
+  preview:
+    image: nginx:stable-alpine
+    container_name: starter-web-preview
+    volumes:
+      - .:/usr/share/nginx/html
+    ports:
+      - 9000:80
