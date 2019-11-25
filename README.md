@@ -7,9 +7,9 @@ No desenvolver do projeto será selecionado quais frameworks serão utilizados p
 ## Getting Started
 
 Clone o repositório através do comando
-... git clone https://github.com/willtecti/devtec.git ...
+``` git clone https://github.com/willtecti/devtec.git ```
 Pelo terminal dentro da pasta do proejeto execute.
-... docker-compose up ...
+``` docker-compose up ```
 
 ### Prerequisites
 
