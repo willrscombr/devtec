@@ -3,11 +3,18 @@
 version: '3'
 
 services:
-    # NGINX preview of 'npm run build' contents
-  preview:
+  web:
+    restart: always
     image: nginx:stable-alpine
     container_name: web
     volumes:
-      - .:/usr/share/nginx/html
+      - ./html:/usr/share/nginx/html
+      - /var/log/nginx/log:/var/log/nginx/log
     ports:
       - 80:80
+    networks:
+      - public
+
+networks:
+  public:
+    driver: bridge
